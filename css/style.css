@@ -10,13 +10,28 @@
     font-weight: 600;
     margin-bottom: 30px;
   }
+  h3 {
+    font-size: 22px;
+    line-height: 1.2em;
+    color: #000000;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
   h4 {
     font-size: 19px;
-    line-height: 1.375em;
+    line-height: 0.2em;
     color: #303030;
     font-weight: 400;
     margin-bottom: 30px;
-  }  
+  } 
+  h5 {
+    font-size: 17px;
+    line-height: 0.2em;
+    color: #303030;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  } 
   .jumbotron {
     background-color: #a2c4e6;
     color: #fff;
