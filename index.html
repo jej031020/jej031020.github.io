@@ -38,26 +38,17 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#skils&tools">SKILLS&TOOLS</a></li>
-                    <li><a href="#portfolio">PORTFOLIO</a></li>
                     <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#guestbook">GUESTBOOK</a></li>
                     <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-
     <div class="jumbotron text-center">
         <h1>Eunjin Jeong</h1>
         <p>programmer</p>
-        <form>
-            <div class="input-group">
-                <input type="email" class="form-control" size="50" placeholder="Email Address" required>
-                <div class="input-group-btn">
-                    <button type="button" class="btn btn-danger">Subscribe</button>
-                </div>
-            </div>
-        </form>
     </div>
 
 
@@ -81,9 +72,6 @@
                     아직 많이 부족하지만 다양한 활동들을 해보고, 프로젝트를 진행하면서 좋은 경험을 쌓아 나중에는 여러 방면에 뛰어난 개발자가 되고 싶습니다.
                 </p><br>
                 <button class="btn btn-default btn-lg">Get in Touch</button>
-            </div>
-            <div class="col-sm-4">
-                <span class="glyphicon glyphicon-signal logo"></span>
             </div>
         </div>
     </div>
@@ -231,74 +219,26 @@
         </div>
     </div>
 
-
-    <!-- Container (Pricing Section) -->
-    <div id="pricing" class="container-fluid">
-        <div class="text-center">
-            <h2>Pricing</h2>
-            <h4>Choose a payment plan that works for you</h4>
-        </div>
-        <div class="row slideanim">
-            <div class="col-sm-4 col-xs-12">
-                <div class="panel panel-default text-center">
-                    <div class="panel-heading">
-                        <h1>Basic</h1>
-                    </div>
-                    <div class="panel-body">
-                        <p><strong>20</strong> Lorem</p>
-                        <p><strong>15</strong> Ipsum</p>
-                        <p><strong>5</strong> Dolor</p>
-                        <p><strong>2</strong> Sit</p>
-                        <p><strong>Endless</strong> Amet</p>
-                    </div>
-                    <div class="panel-footer">
-                        <h3>$19</h3>
-                        <h4>per month</h4>
-                        <button class="btn btn-lg">Sign Up</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4 col-xs-12">
-                <div class="panel panel-default text-center">
-                    <div class="panel-heading">
-                        <h1>Pro</h1>
-                    </div>
-                    <div class="panel-body">
-                        <p><strong>50</strong> Lorem</p>
-                        <p><strong>25</strong> Ipsum</p>
-                        <p><strong>10</strong> Dolor</p>
-                        <p><strong>5</strong> Sit</p>
-                        <p><strong>Endless</strong> Amet</p>
-                    </div>
-                    <div class="panel-footer">
-                        <h3>$29</h3>
-                        <h4>per month</h4>
-                        <button class="btn btn-lg">Sign Up</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4 col-xs-12">
-                <div class="panel panel-default text-center">
-                    <div class="panel-heading">
-                        <h1>Premium</h1>
-                    </div>
-                    <div class="panel-body">
-                        <p><strong>100</strong> Lorem</p>
-                        <p><strong>50</strong> Ipsum</p>
-                        <p><strong>25</strong> Dolor</p>
-                        <p><strong>10</strong> Sit</p>
-                        <p><strong>Endless</strong> Amet</p>
-                    </div>
-                    <div class="panel-footer">
-                        <h3>$49</h3>
-                        <h4>per month</h4>
-                        <button class="btn btn-lg">Sign Up</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- Container (Guestbook Section) -->
+    <div id="guestbook" class="container-fluid">
+    <div class="text-center">
+        <h2>GuestBook</h2>
+        <h4>Leave a message in the guestbook!</h4>
     </div>
 
+    <!-- 입력 폼 -->
+    <form id="guestForm" onsubmit="addMessage(); return false;">
+        <div class="form-group">
+        <textarea id="guestInput" class="form-control" rows="4" placeholder="Say 'Hello'" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Click</button>
+    </form>
+
+    <br>
+
+    <!-- 메시지 표시 영역 -->
+    <div id="guestMessages"></div>
+    </div>
 
     <!-- Container (Contact Section) -->
     <div id="contact" class="container-fluid bg-grey">

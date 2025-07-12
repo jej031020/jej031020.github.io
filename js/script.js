@@ -1,34 +1,19 @@
-$(document).ready(function () {
-    // Add smooth scrolling to all links in navbar + footer link
-    $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
+function addMessage() {
+    const input = document.getElementById("guestInput");
+    const messageText = input.value.trim();
 
-            // Store hash
-            var hash = this.hash;
+    if (messageText) {
+      const messagesDiv = document.getElementById("guestMessages");
 
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 900, function () {
+      // 새 메시지 생성
+      const newMessage = document.createElement("div");
+      newMessage.className = "guest-message";
+      newMessage.innerText = messageText;
 
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-            });
-        } // End if
-    });
+      // 메시지 추가
+      messagesDiv.prepend(newMessage);
 
-    $(window).scroll(function () {
-        $(".slideanim").each(function () {
-            var pos = $(this).offset().top;
-
-            var winTop = $(window).scrollTop();
-            if (pos < winTop + 600) {
-                $(this).addClass("slide");
-            }
-        });
-    });
-})
+      // 입력칸 초기화
+      input.value = "";
+    }
+  }
