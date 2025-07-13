@@ -49,7 +49,8 @@
     <div class="jumbotron text-center">
         <h1>정 은 진</h1>
         <h7>Portfolio</h7><br><br>
-        <h8><span class="glyphicon glyphicon glyphicon-scissors logo-medium"></span> ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ</h8>
+        <h8><span class="glyphicon glyphicon glyphicon-scissors logo-medium"></span> ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ
+            ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ</h8>
     </div>
 
     <div class="container">
@@ -75,8 +76,15 @@
                     자바 스프링부트, 데이터베이스 등 처음 배우는 것이 많아 아직 어렵게 느껴지지만 많이 연습하고 익혀서 익숙해질 수 있도록 노력하겠습니다.
                     아직 많이 부족하지만 다양한 활동들을 해보고, 프로젝트를 진행하면서 좋은 경험을 쌓아 나중에는 여러 방면에서 뛰어난 개발자가 되고 싶습니다.
                 </h6>
-                <div class="meta-image">
-                    <img src="assets/images/meta_poster.png" alt="meta_poster" width="240" height="336" ;>
+                <!-- 이미지 + 돋보기 아이콘 -->
+                <div class="meta-image" onclick="openImageModal(this.querySelector('img'))">
+                    <img src="assets/images/meta_poster.png" id="popupImage" class="poster-image" alt="Meta Poster">
+                    <div class="magnifier-icon">&#128269;</div>
+                </div>
+                <!-- 이미지 모달 팝업창 -->
+                <div id="imageModal" class="image-modal">
+                    <span class="image-close" onclick="closeImageModal()">&times;</span>
+                    <img class="image-modal-content" id="modalImage">
                 </div>
             </div>
             <!-- More 버튼 -->
@@ -86,9 +94,10 @@
                 <div class="modal-content">
                     <span class="close" onclick="closeModal()">&times;</span>
                     <h2>추가 소개</h2>
-                    <p>
-
-                    </p>
+                    <h2>
+                        -<br>
+                        -<br>
+                    </h2>
                 </div>
             </div>
         </div>
@@ -181,26 +190,26 @@
             <div class="row text-center slideanim">
                 <div class="col-sm-4">
                     <div class="thumbnail">
-                        <img src="assets/images/data.png" alt="data" width="400" height="300">
+                        <img src="assets/images/data.png" alt="data" width=100% height=100%><br>
                         <p><strong>Data</strong></p>
                         <p>Data Collection & Analysis</p>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="thumbnail">
-                        <img src="assets/images/MachineLearning.png" alt="MachineLearning" width="400" height="300"><br>
+                        <img src="assets/images/MachineLearning.png" alt="MachineLearning" width=100% height=100%><br>
                         <p><strong>Machine Learning</strong></p>
                         <p></p>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="thumbnail">
-                        <img src="assets/images/AI_Chatbot.png" alt="AI_Chatbot" width="400" height="300">
+                        <img src="assets/images/AI Chatbot.png" alt="AI_Chatbot" width=100% height=100%><br>
                         <p><strong>AI Chatbot</strong></p>
                         <p>AI Connection</p>
                     </div>
                 </div>
-            </div><br><br>
+            </div><br><br><br>
 
 
             <h3>What I have to create</h3>
@@ -220,16 +229,13 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice
-                                President,
-                                Comment Box</span></h4>
+                        <h4>1. 수치값 측정</h4>
                     </div>
                     <div class="item">
-                        <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
+                        <h4>2. 사상체질 진단</h4>
                     </div>
                     <div class="item">
-                        <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor,
-                                FriendsAlot</span></h4>
+                        <h4>3. 맞춤형 처방</h4>
                     </div>
                 </div>
 

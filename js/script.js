@@ -33,3 +33,15 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 };
+
+function openImageModal(img) {
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImage");
+
+  modal.style.display = "block";
+  modalImg.src = img.src;
+}
+
+function closeImageModal() {
+  document.getElementById("imageModal").style.display = "none";
+}
