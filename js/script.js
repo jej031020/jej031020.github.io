@@ -17,3 +17,19 @@ function addMessage() {
       input.value = "";
     }
   }
+
+  function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+// 바깥 클릭 시 닫기
+window.onclick = function(event) {
+  const modal = document.getElementById("myModal");
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+};

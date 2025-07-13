@@ -75,12 +75,24 @@
                     기본기를 쌓고, 한층 더 성장하기 위해 현재 메타버스 아카데미 5기를 수강하고 있습니다.
                     자바 스프링부트, 데이터베이스 등 처음 배우는 것이 많아 아직 어렵게 느껴지지만 많이 연습하고 익혀서 익숙해질 수 있도록 노력하겠습니다.
                     아직 많이 부족하지만 다양한 활동들을 해보고, 프로젝트를 진행하면서 좋은 경험을 쌓아 나중에는 여러 방면에서 뛰어난 개발자가 되고 싶습니다.
-                </h6><br><br>
+                </h6>
                 <div class="meta-image">
                     <img src="assets/images/meta_poster.png" alt="meta_poster" width="240" height="336" ;>
                 </div>
             </div>
-            <button class="btn btn-default btn-lg">More</button>
+            <!-- More 버튼 -->
+            <button class="btn btn-default btn-lg" onclick="openModal()">More</button>
+            <!-- 모달 팝업창 -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h2>추가 소개</h2>
+                    <p>
+                        취미 : 유튜브 시청<br>
+                        MBTI: 
+                    </p>
+                </div>
+            </div>
         </div>
 
 
@@ -143,27 +155,27 @@
                 <div class="col-sm-4">
                     <img src="assets/images/Github.png" alt="Github" width="50" height="50" ;>
                     <h5>Github</h5>
-                    <a href="https://jej031020.github.io/" title="Portfolio">Portfolio</a>
+                    <a href="https://jej031020.github.io/" title="Portfolio" class="underline-link">Portfolio</a>
                 </div>
                 <div class="col-sm-4">
                     <img src="assets/images/Notion.png" alt="Notion" width="50" height="50" ;>
                     <h5>Notion</h5>
                     <a href="https://www.notion.so/98f80e3e95f046238bcedb996c3b430f?source=copy_link"
-                        title="notion">Study Notes</a>
+                        title="notion" class="underline-link">Study Notes</a>
                 </div>
                 <div class="col-sm-4">
                     <img src="assets/images/Tistory.png" alt="Tistory" width="50" height="50" ;>
                     <h5>Tistory</h5>
-                    <a href="https://jinn312.tistory.com/" title="Tistory">Coding / Dev Notes</a>
+                    <a href="https://jinn312.tistory.com/" title="Tistory" class="underline-link">Coding / Dev Notes</a>
                 </div>
             </div>
         </div>
 
 
-        <!-- Container (Portfolio Section) -->
-        <div id="portfolio" class="container-fluid text-center bg-grey">
-            <h2>Portfolio</h2><br>
-            <h4>What we have created</h4>
+        <!-- Container (Projects Section) -->
+        <div id="projects" class="container-fluid text-center bg-grey">
+            <h2>Projects</h2><br>
+            <h4>What I have to create</h4>
             <div class="row text-center slideanim">
                 <div class="col-sm-4">
                     <div class="thumbnail">
