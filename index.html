@@ -48,7 +48,9 @@
 
     <div class="jumbotron text-center">
         <h1>Eunjin Jeong</h1>
-        <p>programmer</p>
+        <h7>Portfolio</h7><br><br>
+        <h8><span class="glyphicon glyphicon glyphicon-scissors logo-medium"></span> ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ
+            ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ ㅡ</h8>
     </div>
 
     <div class="container">
@@ -63,17 +65,22 @@
                         <div>
                             <h4>이름: 정은진</h4>
                             <h4>학교: 홍익대학교 세종캠퍼스</h4>
-                            <h4>전공: 소프트웨어융합학과</h4><br>
+                            <h4>전공: 소프트웨어융합학과</h4>
                         </div>
                     </div>
-                    <p>안녕하세요. 개발자를 꿈꾸고 있는 정은진입니다.<br>
-                        기본기를 쌓고, 한층 더 성장하기 위해 현재 메타버스 아카데미 5기를 수강하고 있습니다.
-                        자바 스프링부트, 데이터베이스 등 처음 배우는 것들이라 아직 어렵게 느껴지지만 많이 연습하고 익혀서 익숙해질 수 있도록 노력하겠습니다.
-                        아직 많이 부족하지만 다양한 활동들을 해보고, 프로젝트를 진행하면서 좋은 경험을 쌓아 나중에는 여러 방면에 뛰어난 개발자가 되고 싶습니다.
-                    </p><br>
-                    <button class="btn btn-default btn-lg">Get in Touch</button>
                 </div>
             </div>
+            <div style="display: flex; align-items: flex-end;">
+                <h6>안녕하세요. 개발자를 꿈꾸고 있는 정은진입니다.<br>
+                    기본기를 쌓고, 한층 더 성장하기 위해 현재 메타버스 아카데미 5기를 수강하고 있습니다.
+                    자바 스프링부트, 데이터베이스 등 처음 배우는 것이 많아 아직 어렵게 느껴지지만 많이 연습하고 익혀서 익숙해질 수 있도록 노력하겠습니다.
+                    아직 많이 부족하지만 다양한 활동들을 해보고, 프로젝트를 진행하면서 좋은 경험을 쌓아 나중에는 여러 방면에서 뛰어난 개발자가 되고 싶습니다.
+                </h6><br><br>
+                <div class="meta-image">
+                    <img src="assets/images/meta_poster.png" alt="meta_poster" width="240" height="336" ;>
+                </div>
+            </div>
+            <button class="btn btn-default btn-lg">More</button>
         </div>
 
 
@@ -248,10 +255,9 @@
             <h2 class="text-center">CONTACT</h2>
             <div class="row">
                 <div class="col-sm-5">
-                    <p>Contact us and we'll get back to you within 24 hours.</p>
-                    <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
-                    <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
-                    <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+                    <h6><span class="glyphicon glyphicon-map-marker"></span> South Korea</h6>
+                    <h6><span class="glyphicon glyphicon-phone"></span> 010-0000-0000</h6>
+                    <h6><span class="glyphicon glyphicon-envelope"></span> jej031020@naver.com</h6>
                 </div>
                 <div class="col-sm-7 slideanim">
                     <div class="row">
@@ -273,63 +279,62 @@
                 </div>
             </div>
         </div>
-    </div>
 
 
-    <!-- Image of location/map -->
-    <img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+        <!-- Image of location/map -->
+        <img src="assets/images/school_map.png" class="shcool map" style="width:100%">
 
 
-    <footer class="container-fluid text-center">
-        <a href="#myPage" title="To Top">
-            <span class="glyphicon glyphicon-chevron-up"></span>
-        </a>
-        <p>Thank you</p>
-    </footer>
+        <footer class="container-fluid text-center">
+            <a href="#myPage" title="To Top">
+                <span class="glyphicon glyphicon-chevron-up"></span>
+            </a>
+            <p>Thank you</p>
+        </footer>
 
 
-    <script>
-        $(document).ready(function () {
-            // Add smooth scrolling to all links in navbar + footer link
-            $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
+        <script>
+            $(document).ready(function () {
+                // Add smooth scrolling to all links in navbar + footer link
+                $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
 
 
-                    // Store hash
-                    var hash = this.hash;
+                        // Store hash
+                        var hash = this.hash;
 
 
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 900, function () {
+                        // Using jQuery's animate() method to add smooth page scroll
+                        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 900, function () {
 
 
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                } // End if
-            });
-
-
-            $(window).scroll(function () {
-                $(".slideanim").each(function () {
-                    var pos = $(this).offset().top;
-
-
-                    var winTop = $(window).scrollTop();
-                    if (pos < winTop + 600) {
-                        $(this).addClass("slide");
-                    }
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        });
+                    } // End if
                 });
-            });
-        })
-    </script>
 
+
+                $(window).scroll(function () {
+                    $(".slideanim").each(function () {
+                        var pos = $(this).offset().top;
+
+
+                        var winTop = $(window).scrollTop();
+                        if (pos < winTop + 600) {
+                            $(this).addClass("slide");
+                        }
+                    });
+                });
+            })
+        </script>
+    </div>
 
 </body>
 
